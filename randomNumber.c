@@ -92,12 +92,11 @@ int main() {
     switch (choice)
     {
         case 1:        
-            // printf("Enter the lower bound: ");
-            // scanf("%d", &lower);
-            // printf("Enter the upper bound: ");
-            // scanf("%d", &upper);
-            lower = -10;
-            upper = 1;
+            printf("Enter the lower bound: ");
+            scanf("%d", &lower);
+            printf("Enter the upper bound: ");
+            scanf("%d", &upper);
+            
             if (upper < lower) {
                 printf("Error: Upper bound must be greater than or equal to the lower bound.\n");
                 return -1; 
@@ -119,7 +118,6 @@ int main() {
             for (int j = 0; j < 1000; j++) {
                 float custom_rand_float = randF();
                 printf("Random float between 0 and 1: %f\n", custom_rand_float);
-                // insertOrUpdate(hashTable, custom_rand_float);
             }   
         break;
         
